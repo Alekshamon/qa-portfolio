@@ -15,7 +15,7 @@ Welcome to my QA automation tester portfolio. This repository showcases a select
 ## 🧪 Tools and Technologies Used
 
 - **Languages**: JavaScript, Python, Java, SQL
-- **Test Frameworks**:
+- **Test Frameworks**
   - Selenium WebDriver
   - Cypress
   - Playwright
@@ -27,12 +27,12 @@ Welcome to my QA automation tester portfolio. This repository showcases a select
 
 ## 📁 Repository Structure
 
-qa-portfolio/
-── frontend-tests/ # End-to-end tests for web interfaces (e.g., Cypress, Playwright)
-── api-tests/ # API tests (e.g., with Postman or PyTest + Requests)
-── automation-frameworks/ # Frameworks developed for specific projects
-── docs/ # Documentation, test plans, QA strategies
-── README.md # This file
+- **qa-portfolio**
+-  frontend-tests/ # End-to-end tests for web interfaces (e.g., Cypress, Playwright)
+-  api-tests/ # API tests (e.g., with Postman or PyTest + Requests)
+- automation-frameworks/ # Frameworks developed for specific projects
+- docs/ # Documentation, test plans, QA strategies
+- README.md # This file
 
 
 ---
