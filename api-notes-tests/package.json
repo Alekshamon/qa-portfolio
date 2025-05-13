@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "cypress": "^14.3.3"
+  },
+  "scripts": {
+    "test:health-check": "cypress run --spec 'cypress/e2e/health-check.cy.js'",
+    "test:signup": "cypress run --spec 'cypress/e2e/users/signup.cy.js'",
+    "test:login": "cypress run --spec 'cypress/e2e/users/login.cy.js'",
+    "test:user_profile": "cypress run --spec 'cypress/e2e/users/user_profile.cy.js'",
+    "test:user_profile_update": "cypress run --spec 'cypress/e2e/users/user_profile_update.cy.js'",
+    "test:change_password": "cypress run --spec 'cypress/e2e/users/change_password.cy.js'",
+    "test:forgot_password": "cypress run --spec 'cypress/e2e/users/forgot_password.cy.js'"
+  }
+}
