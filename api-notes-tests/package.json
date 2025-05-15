@@ -9,6 +9,8 @@
     "test:user_profile": "cypress run --spec 'cypress/e2e/users/user_profile.cy.js'",
     "test:user_profile_update": "cypress run --spec 'cypress/e2e/users/user_profile_update.cy.js'",
     "test:change_password": "cypress run --spec 'cypress/e2e/users/change_password.cy.js'",
-    "test:forgot_password": "cypress run --spec 'cypress/e2e/users/forgot_password.cy.js'"
+    "test:forgot_password": "cypress run --spec 'cypress/e2e/users/forgot_password.cy.js'",
+    "test:logout_and_delete": "cypress run --spec 'cypress/e2e/users/logout_and_delete.cy.js'",
+    "test:e2e_user_lifecycle": "cypress run --spec 'cypress/e2e/users/e2e_user_lifecycle.cy.js'"
   }
 }

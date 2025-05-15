@@ -6,7 +6,7 @@ describe("User Registration Tests", () => {
   // Test 1 : create a user account
   it("Should create a user account with valid data", () => {
     cy.fixture("userData.json").then((userData) => {
-      const validUser = generateValidUser();
+      const validUser = userData.validUser;
 
       cy.request({
         method: "POST",
