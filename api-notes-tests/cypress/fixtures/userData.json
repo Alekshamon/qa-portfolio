@@ -18,5 +18,12 @@
     "name": "User Test",
     "email": "usertesttestgmail.com",
     "password": "Password123!"
+  }, 
+  "staticUser": {
+    "name": "Static Test User",
+    "email": "statictestuser@gmail.com",
+    "password": "Password123!"
+  
   }
+
 }
