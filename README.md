@@ -26,9 +26,9 @@ Welcome to my QA automation tester portfolio. This repository showcases a select
 
 ## 📂 Included Projects
 
-### ✅ Project 1 –  desmos-calculator-test/ Some Plawright tests of calculator https://www.desmos.com/scientific?lang=en 
+### ✅ Project 1 –  ../qa-portfolio/desmos-calculator-test/ - Some Plawright tests of calculator https://www.desmos.com/scientific?lang=en 
 
-### ✅ Project 2 – Notes API tests with Cypress/ https://practice.expandtesting.com/notes/api/api-docs
+### ✅ Project 2 – ../qa-portfolio/api-notes-tests/ - Notes API tests with Cypress https://practice.expandtesting.com/notes/api/api-docs
 
 ### ✅ Project 3 – 
 
