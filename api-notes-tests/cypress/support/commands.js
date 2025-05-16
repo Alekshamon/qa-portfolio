@@ -21,3 +21,25 @@ Cypress.Commands.add("loginViaAPI", () => {
       });
   });
 });
+
+Cypress.Commands.add("loginStaticUser", () => {
+  return cy.fixture("userData.json").then((data) => {
+    return cy
+      .request({
+        method: "POST",
+        url: "https://practice.expandtesting.com/notes/api/users/login",
+        body: {
+          email: data.staticUser.email,
+          password: data.staticUser.password,
+        },
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+      .then((response) => {
+        const token = response.body.data.token;
+        Cypress.env("token", token);
+        return token;
+      });
+  });
+});

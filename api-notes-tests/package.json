@@ -1,16 +1,14 @@
 {
   "devDependencies": {
-    "cypress": "^14.3.3"
+    "cypress": "^14.3.3",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^5.0.0",
+    "mochawesome-report-generator": "^6.2.0"
   },
   "scripts": {
-    "test:health-check": "cypress run --spec 'cypress/e2e/health-check.cy.js'",
-    "test:signup": "cypress run --spec 'cypress/e2e/users/signup.cy.js'",
-    "test:login": "cypress run --spec 'cypress/e2e/users/login.cy.js'",
-    "test:user_profile": "cypress run --spec 'cypress/e2e/users/user_profile.cy.js'",
-    "test:user_profile_update": "cypress run --spec 'cypress/e2e/users/user_profile_update.cy.js'",
-    "test:change_password": "cypress run --spec 'cypress/e2e/users/change_password.cy.js'",
-    "test:forgot_password": "cypress run --spec 'cypress/e2e/users/forgot_password.cy.js'",
-    "test:logout_and_delete": "cypress run --spec 'cypress/e2e/users/logout_and_delete.cy.js'",
-    "test:e2e_user_lifecycle": "cypress run --spec 'cypress/e2e/users/e2e_user_lifecycle.cy.js'"
+    "e2e:auth": "cypress run --spec 'cypress/e2e/auth/*.cy.js'",
+    "e2e:users": "cypress run --spec 'cypress/e2e/users/*.cy.js'",
+    "e2e:notes": "cypress run --spec 'cypress/e2e/notes/*.cy.js'"
   }
 }
