@@ -50,15 +50,6 @@ npx cypress open
 # Run all tests in headless mode
 npx cypress run
 
-# Run only auth tests
-npm run e2e:auth
-
-# Run only users tests
-npm run e2e:users
-
-# Run only notes tests
-npm run e2e:notes
-
 ```
 
 ## Test Report (Mochawesome)
