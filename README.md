@@ -14,12 +14,10 @@ Welcome to my QA automation tester portfolio. This repository showcases a select
 
 ## 🧪 Tools and Technologies Used
 
-- **Languages**: JavaScript, Python, Java, SQL
+- **Languages**: JavaScript, TypeScript, PHP, SQL, Gherkin
 - **Test Frameworks**
-  - Selenium
   - Cypress
   - Playwright
-  - PyTest
 - **CI/CD**: GitHub Actions, GitLab CI
 
 ---
