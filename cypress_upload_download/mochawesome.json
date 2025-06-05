@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2025-06-05T14:48:57.055Z",
+    "end": "2025-06-05T14:49:09.804Z",
+    "duration": 12749
+  },
+  "results": [
+    {
+      "uuid": "e78229d9-5132-423d-a44a-5d9026746610",
+      "title": "",
+      "fullFile": "cypress/e2e/integration/upload_download.cy.js",
+      "file": "cypress/e2e/integration/upload_download.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e8d94721-67bc-44c9-b895-08f35aaea683",
+          "title": "File upload and download tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Upload file and download it in Zip format",
+              "fullTitle": "File upload and download tests Upload file and download it in Zip format",
+              "timedOut": null,
+              "duration": 10272,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"#fileField\").attachFile(\"fileToUpload.png\");\ncy.contains(\"It contains 1 uploaded file\").should(\"be.visible\");\ncy.contains(\"Download files\").click();\ncy.contains(\"Zip\").should(\"have.attr\", \"href\").then(href => {\n  const absoluteLink = \"https://filebin.net\" + href;\n  cy.downloadFile(absoluteLink, \"mydownloads/zipFiles\", \"downloadedFromCypress.zip\");\n  cy.readFile(\"mydownloads/zipFiles/downloadedFromCypress.zip\", \"binary\", {\n    timeout: 10000\n  }).should(buffer => {\n    expect(buffer.length).to.be.greaterThan(100);\n  });\n});",
+              "err": {},
+              "uuid": "11106b37-0503-4806-8ef6-d9e0a842377c",
+              "parentUUID": "e8d94721-67bc-44c9-b895-08f35aaea683",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "11106b37-0503-4806-8ef6-d9e0a842377c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10272,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
